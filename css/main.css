@@ -385,6 +385,8 @@ hr {
     .out-menu .menu-text p:hover {
       color: white; }
   .out-menu .profile {
+    width: 200px;
+    height: 200px;
     padding: 30px;
     text-align: center; }
     .out-menu .profile img {
