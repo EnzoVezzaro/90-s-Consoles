@@ -353,6 +353,7 @@ hr {
     opacity: 1; }
 
 .out-menu {
+  text-align: center;
   display: -webkit-flex;
   display: flex;
   width: 0px;
@@ -390,8 +391,8 @@ hr {
     padding: 30px;
     text-align: center; }
     .out-menu .profile img {
-      width: 12vh;
-      height: 12vh;
+      width: 100%;
+      height: 100%;
       border-radius: 50%; }
   .out-menu .social h3 {
     text-align: center; }
