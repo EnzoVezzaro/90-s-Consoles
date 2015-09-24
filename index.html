@@ -13,6 +13,7 @@
     <!-- endbuild-->
     <!-- build:css css/main.css-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/socialcount-with-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- endbuild-->
     <!-- build:js js/vendor/modernizr.js-->
@@ -42,9 +43,21 @@
         <div class="social">
           <h3>Share</h3>
           <div class="share">
-            <div class="facebook"><img src="images/sprites/fb.png"></div>
-            <div class="google"><img src="images/sprites/gp.png"></div>
-            <div class="twitter"><img src="images/sprites/tw.png"></div>
+            <div class="facebook" id="facebook">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=enzovezzaro.github.io/90-s-Consoles" title="Share on Facebook" target="_blank">
+                <img src="images/sprites/fb.png">
+              </a>
+          </div>
+            <div class="googleplus" id="googleplus">
+              <a href="https://plus.google.com/share?url=enzovezzaro.github.io/90-s-Consoles" title="Share on Google Plus" target="_blank">
+                <img src="images/sprites/gp.png">
+              </a>
+            </div>
+            <div class="twitter" id="twitter">
+              <a href="https://twitter.com/intent/tweet?text=enzovezzaro.github.io/90-s-Consoles" title="Share on Twitter" target="_blank">
+                <img src="images/sprites/tw.png">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -177,7 +190,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-    <!-- build:js js/vendor.js--> -->
+    <!-- build:js js/vendor.js-->
     <!-- bower:js-->
     <!-- endbower-->
     <!-- endbuild-->
