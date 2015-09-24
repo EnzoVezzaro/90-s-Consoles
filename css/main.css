@@ -357,6 +357,7 @@ hr {
   display: flex;
   width: 0px;
   height: 100px;
+  z-index: 2;
   -webkit-flex-direction: column;
           flex-direction: column;
   -webkit-justify-content: space-between;
