@@ -232,7 +232,7 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
       $(".out-menu").css("display", "none");
     };
   });
-} else if (window.matchMedia("(max-width: 1100px)").matches) {
+} else if (window.matchMedia("only screen and (max-device-width: 1100px) and (-webkit-min-device-pixel-ratio: 2)").matches) {
   //super
   $(".super-nintendo").click(function () {
     $(".super-text").css("display", "flex");
