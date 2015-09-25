@@ -669,7 +669,7 @@ hr {
     .out-menu .arrow-menu {
       display: none; } }
 
-@media screen and (min-width: 400px) and (max-width: 1100px) {
+@media only screen and (min-device-width: 400px) and (max-device-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
   .out-container {
     -webkit-flex-direction: column;
             flex-direction: column; }
@@ -808,7 +808,7 @@ hr {
         display: block;
         text-align: center; } }
 
-@media screen and (max-width: 400px) {
+@media only screen and (min-device-width: 399px) and (-webkit-min-device-pixel-ratio: 2)  {
   .out-container {
     -webkit-flex-direction: column;
             flex-direction: column; }
@@ -936,7 +936,8 @@ hr {
                 flex-direction: column; }
       .out-container .out-menu .arrow-menu {
         display: block;
-        text-align: center; } }
+        text-align: center; }
+}
 
 body {
   background-color: black; }
