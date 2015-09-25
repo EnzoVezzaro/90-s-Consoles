@@ -360,6 +360,7 @@ hr {
 .out-menu {
   display: -webkit-flex;
   display: flex;
+  text-align:center;
   width: 0px;
   height: 100px;
   -webkit-flex-direction: column;
@@ -392,11 +393,18 @@ hr {
     display: none; }
   .out-menu .profile {
     width: 100%;
+<<<<<<< HEAD
     padding: 30px;
     text-align: center; }
     .out-menu .profile img {
       width: 12vh;
       height: 12vh;
+=======
+    padding: 30px;}
+    .out-menu .profile img {
+      width: 100px;
+      height: 100px;
+>>>>>>> origin/gh-pages
       border-radius: 50%; }
   .out-menu .social h3 {
     text-align: center; }
@@ -419,6 +427,7 @@ hr {
   display: none; }
 
 .nintendo-64 {
+  cursor: pointer;
   background-color: #069330;
   width: 25vw;
   background-image: url('../images/sprites/Nintendo_64.png');
@@ -434,6 +443,7 @@ hr {
   opacity: 1; }
 
 .nintendo-64-open {
+  cursor: pointer;
   background-color: #069330;
   width: 100vw;
   height: 1500px;
@@ -473,6 +483,7 @@ hr {
   display: none; }
 
 .playstation {
+  cursor: pointer;
   background-color: #f3c202;
   width: 25vw;
   background-image: url('../images/sprites/playstation.png');
@@ -488,6 +499,7 @@ hr {
   opacity: 1; }
 
 .playstation-open {
+  cursor: pointer;
   background-color: #f3c202;
   width: 100vw;
   height: 1400px;
@@ -527,6 +539,7 @@ hr {
   display: none; }
 
 .sega {
+  cursor: pointer;
   background-color: #0a56ac;
   width: 25vw;
   background-image: url('../images/sprites/sega.png');
@@ -542,6 +555,7 @@ hr {
   opacity: 1; }
 
 .sega-open {
+  cursor: pointer;
   background-color: #0a56ac;
   width: 100vw;
   height: 1400px;
@@ -581,6 +595,7 @@ hr {
   display: none; }
 
 .super-nintendo {
+  cursor: pointer;
   background-color: #9596cc;
   width: 25vw;
   background-image: url('../images/sprites/Super_Nintendo.png');
@@ -596,6 +611,7 @@ hr {
   opacity: 1; }
 
 .super-nintendo-open {
+  cursor: pointer;
   background-color: #9596cc;
   width: 100vw;
   height: 1300px;
