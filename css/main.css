@@ -363,6 +363,7 @@ hr {
   text-align:center;
   width: 0px;
   height: 100px;
+  z-index: 1;
   -webkit-flex-direction: column;
           flex-direction: column;
   -webkit-justify-content: space-between;
@@ -393,18 +394,11 @@ hr {
     display: none; }
   .out-menu .profile {
     width: 100%;
-<<<<<<< HEAD
     padding: 30px;
     text-align: center; }
     .out-menu .profile img {
-      width: 12vh;
-      height: 12vh;
-=======
-    padding: 30px;}
-    .out-menu .profile img {
       width: 100px;
       height: 100px;
->>>>>>> origin/gh-pages
       border-radius: 50%; }
   .out-menu .social h3 {
     text-align: center; }
