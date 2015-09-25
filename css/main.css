@@ -808,7 +808,7 @@ hr {
         display: block;
         text-align: center; } }
 
-@media only screen and (min-device-width: 399px) and (-webkit-min-device-pixel-ratio: 2)  {
+@media only screen and (max-device-width: 399px) and (-webkit-min-device-pixel-ratio: 2)  {
   .out-container {
     -webkit-flex-direction: column;
             flex-direction: column; }
