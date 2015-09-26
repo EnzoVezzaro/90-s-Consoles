@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *::after, *::before {
   box-sizing: inherit; }
@@ -29,7 +30,8 @@ html {
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  background-color: white;}
 
 body {
   margin: 0; }
@@ -229,7 +231,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: bounceInUp; }
 
 body {
-  background-color: #dedede;
+  background-color: white;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
@@ -238,13 +240,13 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: white; }
 
 ::selection {
-  background: #FFF498; }
+  background: white; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: white; }
 
 img::-moz-selection {
   background: transparent; }
@@ -348,12 +350,12 @@ hr {
   position: fixed;
   z-index: 1; }
   .icon-container .menu-icon {
-    width: 100%;
-    height: 100%; }
+    width: 50px;
+    height: 50px; }
     .icon-container .menu-icon img {
       opacity: 0.6;
-      width: 100%;
-      height: 100%; }
+      width: 50px;
+      height: 50px; }
     .icon-container .menu-icon img:hover {
       opacity: 1; }
 
@@ -440,7 +442,7 @@ hr {
   cursor: pointer;
   background-color: #069330;
   width: 100vw;
-  height: 1500px;
+  height: 100%;
   background-image: url('../images/sprites/Nintendo_64.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -451,7 +453,7 @@ hr {
 
 .nintendo-64-text {
   width: 100%;
-  height: 1500px;
+  height: 100%;
   display: none;
   background-color: white;
   padding: 30px;
@@ -496,7 +498,7 @@ hr {
   cursor: pointer;
   background-color: #f3c202;
   width: 100vw;
-  height: 1400px;
+  height: 100%;
   background-image: url('../images/sprites/playstation.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -507,12 +509,14 @@ hr {
 
 .playstation-text {
   width: 100%;
-  height: 1400px;
+  height: 100%;
   display: none;
   background-color: white;
   padding: 30px;
   transition-property: all;
-  transition-duration: 0.3s; }
+  transition-duration: 0.3s;
+  z-index: 1;
+}
   .playstation-text .games-playstation {
     display: -webkit-flex;
     display: flex;
@@ -552,7 +556,7 @@ hr {
   cursor: pointer;
   background-color: #0a56ac;
   width: 100vw;
-  height: 1400px;
+  height: 100%;
   background-image: url('../images/sprites/sega.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -563,7 +567,7 @@ hr {
 
 .sega-text {
   width: 100%;
-  height: 1400px;
+  height: 100%;
   display: none;
   background-color: white;
   padding: 30px;
@@ -586,7 +590,7 @@ hr {
     padding: 20px 0px; }
 
 .arrow {
-  display: none; }
+  display: none;}
 
 .super-nintendo {
   cursor: pointer;
@@ -608,7 +612,7 @@ hr {
   cursor: pointer;
   background-color: #9596cc;
   width: 100vw;
-  height: 1300px;
+  height: 100%;
   background-image: url('../images/sprites/Super_Nintendo.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -619,12 +623,15 @@ hr {
 
 .super-text {
   width: 100%;
-  height: 1300px;
+  height: 100%;
   display: none;
   background-color: white;
   padding: 30px;
   transition-property: all;
   transition-duration: 0.3s; }
+  .super-text .arrow
+    display: flex;
+    -webkit-display; flex;
   .super-text .games-super {
     display: -webkit-flex;
     display: flex;
@@ -641,7 +648,7 @@ hr {
     width: 50%;
     padding: 20px 0px; }
 
-@media screen and (min-width: 1100px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px){
   .icon-container {
     display: none; }
   .out-menu {
@@ -667,18 +674,19 @@ hr {
       .out-menu .menu-text i {
         display: none; }
     .out-menu .arrow-menu {
-      display: none; } }
+      display: none; }
+}
 
-@media only screen and (min-device-width: 400px) and (max-device-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 800px){
   .out-container {
     -webkit-flex-direction: column;
             flex-direction: column; }
     .out-container .arrow {
-      display: none;
+      display: flex;
+      -webkit-display: flex;
       position: absolute;
-      -webkit-transform: translate(90vw, 5vh);
-              transform: translate(90vw, 5vh);
-      text-align: center; }
+      transform: translate(90vw, 5vh);
+      -webkit-transform: translate(90vw, 5vh);}
     .out-container .arrow-play {
       display: none;
       position: absolute;
@@ -700,7 +708,8 @@ hr {
       width: 100%;
       height: 25%; }
     .out-container .super-nintendo-open {
-      display: none; }
+      display: none;
+      height: 0px;}
     .out-container .super-text {
       display: none;
       height: 1800px;
@@ -716,6 +725,12 @@ hr {
         padding: 0px;
         margin-top: 30px;
         margin-bottom: 20px; }
+      .out-container .super-text .games-super{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        text-align: center; }
       .out-container .super-text .games-super img {
         width: 100px;
         height: 100px; }
@@ -723,12 +738,15 @@ hr {
       width: 100%;
       height: 25%; }
     .out-container .playstation-open {
-      display: none; }
+      display: none;
+      height: 0px;}
     .out-container .playstation-text {
       display: none;
+      -webkit-display: flex;
       height: 2000px;
       padding: 10px;
       margin: 0px;
+      z-index: 1;
       -webkit-flex-direction: column;
               flex-direction: column;
       -webkit-align-items: center;
@@ -745,7 +763,8 @@ hr {
       width: 100%;
       height: 25%; }
     .out-container .sega-open {
-      display: none; }
+      display: none;
+      height: 0px;}
     .out-container .sega-text {
       display: none;
       height: 2000px;
@@ -764,12 +783,14 @@ hr {
       width: 100%;
       height: 25%; }
     .out-container .nintendo-64-open {
-      display: none; }
+      display: none;
+      height: 0px;}
     .out-container .nintendo-64-text {
       display: none;
-      height: 2000px;
+      height: 4000px;
       padding: 10px;
       margin: 0px;
+      z-index: 1;
       -webkit-flex-direction: column;
               flex-direction: column;
       -webkit-align-items: center;
@@ -782,13 +803,13 @@ hr {
       .out-container .nintendo-64-text .games-nintendo-64 img {
         width: 100px;
         height: 100px; }
-    .out-container .icon-container {
-      display: none; }
     .out-container .out-menu {
       display: -webkit-flex;
       display: flex;
+      position: absolute;
+      z-index: 2;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       -webkit-flex-direction: column;
               flex-direction: column;
       -webkit-justify-content: space-between;
@@ -806,9 +827,25 @@ hr {
                 flex-direction: column; }
       .out-container .out-menu .arrow-menu {
         display: block;
-        text-align: center; } }
+        text-align: center; }
+      .out-container .icon-container{
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+        display: -webkit-flex;
+        display: flex;
+        position: absolute;
+      }
+      .out-container .icon-container .menu-icon{
+        width: 50px;
+        height: 50px;
+        display: -webkit-flex;
+        display: flex;
+        position: absolute;
+    }
+}
 
-@media only screen and (max-device-width: 399px) and (-webkit-min-device-pixel-ratio: 2)  {
+@media screen and (max-width: 399px) {
   .out-container {
     -webkit-flex-direction: column;
             flex-direction: column; }
@@ -913,12 +950,16 @@ hr {
         width: 80px;
         height: 80px; }
     .out-container .icon-container {
-      display: none; }
+      z-index: 2;
+      display: -webkit-flex;
+      display: flex; }
     .out-container .out-menu {
+      position: inherit;
       display: -webkit-flex;
       display: flex;
       width: 100%;
       height: 100%;
+      z-index: 2;
       -webkit-flex-direction: column;
               flex-direction: column;
       -webkit-justify-content: space-between;
