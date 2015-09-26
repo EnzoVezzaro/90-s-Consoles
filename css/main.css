@@ -442,7 +442,7 @@ hr {
   cursor: pointer;
   background-color: #069330;
   width: 100vw;
-  height: 100%;
+  height: 1500px;
   background-image: url('../images/sprites/Nintendo_64.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -498,7 +498,7 @@ hr {
   cursor: pointer;
   background-color: #f3c202;
   width: 100vw;
-  height: 100%;
+  height: 1500px;
   background-image: url('../images/sprites/playstation.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -556,7 +556,7 @@ hr {
   cursor: pointer;
   background-color: #0a56ac;
   width: 100vw;
-  height: 100%;
+  height: 1500px;
   background-image: url('../images/sprites/sega.png');
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -612,9 +612,9 @@ hr {
   cursor: pointer;
   background-color: #9596cc;
   width: 100vw;
-  height: 100%;
+  height: 1700px;
   background-image: url('../images/sprites/Super_Nintendo.png');
-  background-size: 1700px;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: right;
   background-attachment: fixed;
@@ -629,15 +629,15 @@ hr {
   padding: 30px;
   transition-property: all;
   transition-duration: 0.3s; }
-  .super-text .arrow
+  .super-text .arrow{
     display: flex;
-    -webkit-display; flex;
-  .super-text .games-super {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
-    text-align: center; }
+    -webkit-display; flex;}
+    .super-text .games-super {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+              flex-wrap: wrap;
+      text-align: center; }
     .super-text .games-super img {
       width: 100px;
       height: 100px;
@@ -647,7 +647,6 @@ hr {
   .super-text .snes_logo {
     width: 50%;
     padding: 20px 0px; }
-
 @media screen and (max-width: 1200px){
   .icon-container {
     display: none; }
